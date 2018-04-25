@@ -10,6 +10,8 @@ The demo page accessible on the root of the web project will perform the followi
 ## Opening the solution:
 Once you download the files, you can open the solution in Visual Studio 2015 and above.
 
+Visual Studio solution file path: **/src/NumbersToWordsConverter.sln**
+
 You can compile the application, it should install the packages from NuGet during compilation. Once compiled, you can either debug (F5) or execute the web project directly (Ctrl+F5).
 
 ## Testing the output:
