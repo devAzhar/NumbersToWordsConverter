@@ -51,7 +51,7 @@ https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/do
 
 ## Whats Left?
 ### Unit Tests for Web Project
-As per document, Unit tests with 100% coverage are added for the services. I still need to write unit tests for the controller action and web project related code.
+Unit tests with 100% coverage are added for the core classes. I still need to write unit tests for the controller actions and web project related code. There is no real code in controller action as such, that is why I have skipped it for now.
 
 ### Dependency Injection Container Initialization in Configuration
 It is always a good practice to configure the depndency injection container in the configuration files. For now I have initialized the container in the application start process in code.
