@@ -48,7 +48,19 @@ Output: ConvertResponse
  FractionPartWord = fifty
 
 ## CurrencyToWordsConverter
+This service class has one methods to convert a double input into word. This service uses NumberToWordsConverter service in order to convert the parts of the number into words and then format the output as currency. 
 
+This service uses the NumberToWordsConverter service to convert part of number into words.
+
+### string Convert(double amount, string currencyName = "", string currencyCentsName = "")
+This method takes the currency amount as input, you can pass optional parameters for currencyName and currencyCentsName if the currency is not a dollar currency.
+
+_These additional parameters were not part of the requirement but are added for additional flexibility to work with rest of the currencies_
+
+Input: int number=35.50
+Output: string THIRTY-FIVE DOLLARS AND FIFTY CENTS
+
+This method will take care of all the combinations of dollars and cents.
 
 # NumbersToWordsConverter.Web
 
