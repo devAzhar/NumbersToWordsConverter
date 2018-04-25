@@ -15,13 +15,14 @@ You can compile the application, it should install the packages from NuGet durin
 ## Documentation:
 https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/documentation.md
 
-
 ## Code Coverage Results:
-![Code Coverage Result MS Test](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_coverage_ms.png?raw=true)
-
+### OpenCover Code Coverage:
 ![Code Coverage Result OpenCover](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_coverage_open_cover.png?raw=true)
 
-## Code Coverage Results:
+### MS Test Code Coverage:
+![Code Coverage Result MS Test](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_coverage_ms.png?raw=true)
+
+## Code Map:
 ![Code Map Overview](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_map.png?raw=true)
 
 ## Code Metrics:
