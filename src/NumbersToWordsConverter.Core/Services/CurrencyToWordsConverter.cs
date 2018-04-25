@@ -18,8 +18,6 @@
         /// Initializes a new instance of the <see cref="CurrencyToWordsConverter"/> class.
         /// </summary>
         /// <param name="numberToWordsConverter">The number to words converter.</param>
-        /// <param name="currencyName">Name of the currency.</param>
-        /// <param name="currencyCentsName">Name of the currency cents.</param>
         public CurrencyToWordsConverter(INumberToWordsConverter numberToWordsConverter)
         {
             this.NumberToWordsConverter = numberToWordsConverter;
@@ -42,8 +40,18 @@
                 throw new ArgumentException("Negative number cannot be converted to words.");
             }
 
-            currencyName = string.IsNullOrEmpty(currencyName) ? "dollar" : currencyName;
-            currencyCentsName = string.IsNullOrEmpty(currencyCentsName) ? "cent" : currencyCentsName;
+            var currency = "dollar";
+            var cent = "cent";
+
+            if (!string.IsNullOrEmpty(currencyName))
+            {
+                currency = currencyName;
+            }
+
+            if (!string.IsNullOrEmpty(currencyCentsName))
+            {
+                cent = currencyCentsName;
+            }
 
             var pluralSymbol = "s";
 
@@ -63,17 +71,17 @@
                 //Check the number part
                 if (convertResult.SplitResponse.NumberPart > 0)
                 {
-                    currencyName = (convertResult.SplitResponse.NumberPart > 1) ? (currencyName + pluralSymbol) : currencyName;
-                    result = string.Format("{0} {1}", convertResult.NumberPartWord, currencyName);
+                    currency = (convertResult.SplitResponse.NumberPart > 1) ? (currency + pluralSymbol) : currency;
+                    result = string.Format("{0} {1}", convertResult.NumberPartWord, currency);
                 }
 
                 //Check the fraction part
                 if (convertResult.SplitResponse.FractionPart > 0)
                 {
-                    currencyCentsName = (convertResult.SplitResponse.FractionPart > 1) ? (currencyCentsName + pluralSymbol) : currencyCentsName;
+                    cent = (convertResult.SplitResponse.FractionPart > 1) ? (cent + pluralSymbol) : cent;
                     result = string.IsNullOrEmpty(result) ? string.Empty : result + string.Format(" {0} ", separator);
 
-                    result = string.Format("{0} {1} {2}", result, convertResult.FractionPartWord, currencyCentsName);
+                    result = string.Format("{0} {1} {2}", result, convertResult.FractionPartWord, cent);
                 }
             }
 
