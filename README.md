@@ -39,7 +39,7 @@ https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/do
 ![Code Coverage Result OpenCover](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_coverage_open_cover.png?raw=true)
 
 ### MS Test Code Coverage:
-![Code Coverage Result MS Test](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_coverage_ms.png?raw=true)
+![Code Coverage Result MS Test](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_coverage_ms_updated.png?raw=true)
 
 ## Code Map:
 ![Code Map Overview](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_map.png?raw=true)
