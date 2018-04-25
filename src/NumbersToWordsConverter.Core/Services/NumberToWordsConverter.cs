@@ -1,8 +1,8 @@
 ﻿namespace NumbersToWordsConverter.Core.Services
 {
-    using System;
     using Interfaces;
     using Models;
+    using System;
     using System.Collections.Generic;
 
     public class NumberToWordsConverter : INumberToWordsConverter

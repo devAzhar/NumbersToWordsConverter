@@ -22,7 +22,7 @@
         /// <returns>
         /// SplitResponse
         /// </returns>
-        public SplitResponse Split(double number)
+        public virtual SplitResponse Split(double number)
         {
             var response = new SplitResponse();
             response.NumberPart = this.GetNumberPart(number);

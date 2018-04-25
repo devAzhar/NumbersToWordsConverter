@@ -8,7 +8,7 @@
 
     public class CurrencyToWordsConverterController : Controller
     {
-        public ICurrencyToWordsConverter CurrencyToWordsConverter { get; set; }
+        private ICurrencyToWordsConverter CurrencyToWordsConverter { get; set; }
 
         public CurrencyToWordsConverterController(ICurrencyToWordsConverter currencyToWordsConverter)
         {

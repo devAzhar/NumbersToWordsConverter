@@ -1,10 +1,8 @@
 ﻿namespace NumbersToWordsConverter.Core.Models
 {
-    using System;
-
-    [Serializable]
     public sealed class ConvertResponse
     {
+        #region "Constructor"
         /// <summary>
         /// Initializes a new instance of the <see cref="ConvertResponse"/> class.
         /// </summary>
@@ -13,7 +11,9 @@
             this.NumberPartWord = string.Empty;
             this.FractionPartWord = string.Empty;
         }
+        #endregion
 
+        #region "Public Properties"
         public SplitResponse SplitResponse { get; set; }
         /// <summary>
         /// Gets or sets the number part word.
@@ -30,5 +30,6 @@
         /// The fraction part word.
         /// </value>
         public string FractionPartWord { get; set; }
+        #endregion
     }
 }

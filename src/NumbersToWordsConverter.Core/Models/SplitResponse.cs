@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NumbersToWordsConverter.Core.Models
+﻿namespace NumbersToWordsConverter.Core.Models
 {
     public class SplitResponse
     {
+        #region "Constructor"
         public SplitResponse()
         {
             this.NumberPart = 0;
             this.FractionPart = 0;
         }
+        #endregion
 
+        #region "Public Properties"
         /// <summary>
         /// Gets or sets the number part.
         /// </summary>
@@ -29,5 +26,6 @@ namespace NumbersToWordsConverter.Core.Models
         /// The fraction part.
         /// </value>
         public int FractionPart { get; set; }
+        #endregion
     }
 }
