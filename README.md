@@ -12,7 +12,26 @@ Once you download the files, you can open the solution in Visual Studio 2015 and
 
 You can compile the application, it should install the packages from NuGet during compilation. Once compiled, you can either debug (F5) or execute the web project directly (Ctrl+F5).
 
+## Testing the output:
+The default view of the demo page will be like following:
+![Demo View](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/web-view.png?raw=true)
+
+If you provide the sample input, you will get the output as following:
+![Demo View](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/web-view-sample-input.png?raw=true)
+
+### Validation and Error Handling:
+Fields are validated on the client side for data.
+
+![Error View](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/web-view-input-validation-1.png?raw=true)
+![Error View](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/web-view-input-validation-2.png?raw=true)
+
+In some cases (e.g. for -ve amount), the error will be returned from the web api call.
+
+![Error View](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/web-view-input-server-validation.png?raw=true)
+
 ## Documentation:
+You can review the overall documentation about project details on the following url:
+
 https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/documentation.md
 
 ## Code Coverage Results:
