@@ -48,3 +48,16 @@ https://github.com/devAzhar/NumbersToWordsConverter/blob/master/documentation/do
 
 ## Code Metrics:
 ![Code Metrics](https://github.com/devAzhar/NumbersToWordsConverter/blob/master/code-analysis/code_metrics.png?raw=true)
+
+## Whats Left?
+### Unit Tests for Web Project
+As per document, Unit tests with 100% coverage are added for the services. I still need to write unit tests for the controller action and web project related code.
+
+### Dependency Injection Container Initialization in Configuration
+It is always a good practice to configure the depndency injection container in the configuration files. For now I have initialized the container in the application start process in code.
+
+### Add support to specify currency name and cents name on UI
+On back-end currency and cents name is supported but I have not added any UI to demo that functionality.
+
+### Unit Tests and Injection in Java-script
+I have not added any unit tests and dependency injection for the java-script code. It can be added later. 
