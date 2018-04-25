@@ -8,7 +8,7 @@ The demo page accessible on the root of the web project will perform the followi
 3. Render this name and number (as words) as a web page
 
 ## Opening the solution:
-Once you download the files, you can open the solution in Visual Studio 2015 and above.
+Once you download the files, you can open the solution in Visual Studio 2015 or above.
 
 Visual Studio solution file path: **/src/NumbersToWordsConverter.sln**
 
