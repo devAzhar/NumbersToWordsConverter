@@ -88,13 +88,13 @@ I have created the demo on root of the URL.
 
 Demo is created using MVC razor view and KnockoutJS.
 
-Web UI is built using the standard ASP.Net MVC site layout that uses Bootstrap and jQuery by default.
+Web UI is built using the standard ASP.Net MVC view that uses Bootstrap and jQuery by default.
 
 ## NumbersToWordsConverter.Tests
-This project contains Unit Test for the Core project. Unit test coverage is 100% for the Core project.
+This project contains Unit Test for the Core project. Unit test coverage is 100% for the Core project. Code coverage was measured using Teast Analyzer in Visual Studio Enterprise and a free tool OpenCover. Both tools reported 100% code coverage for the Core project.
 
 # Depndency Injection
-Microsoft Unity Dependency Injection framework is used.
+Microsoft Unity Dependency Injection framework is used. Container is initialized during Application_Start event. Controller favtory is also created in order to use to resolve dependencies in controllers.
 
 # Unit Testing
 MS Test framework is used to perform unit testing for the Core project.
