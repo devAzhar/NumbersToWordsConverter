@@ -1,0 +1,55 @@
+﻿@*
+    - Description: MVC Razor View to demo the functionality of the Numbers to Words conversion
+    - Front-end Development: On front-end side, this view is bound with KnockoutJS (Related view model: /scripts/custom/CurrencyToWordsConverter.ViewModel.js)
+    - UI/CSS - Bootstrap Css and grid system is used
+    - Layouts: Depends on shared layout: _Layout.cshtml
+    - Model: No Model is needed
+*@
+
+@{
+    ViewBag.Title = "Demo";
+}
+
+<div class="jumbotron" id="currencyToWordsConverterContainer">
+    <h2>Currency to Words Converter</h2>
+    <br />
+    <div class="row" data-bind="visible: errorString">
+        <div class="col-md-12">
+            <div class="alert alert-danger fade in alert-dismissible">
+                <span data-bind="html: errorString"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-2"><label for="name">Name:</label></div>
+            <div class="col-md-8"><input id="name" type="text" class="form-control" maxlength="100" data-bind="value: name" /></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><label for="number">Number:</label></div>
+        <div class="col-md-8"><input type="number" id="number" class="form-control" maxlength="20" data-bind="value: number" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <button class="btn btn-primary btn-lg" title="Click here to convert the number into words and display on the page." data-bind="click: calculate" >Calculate &raquo;</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 displayString">
+            <span data-bind="html: displayString"></span>
+        </div>
+    </div>
+
+
+</div>
+
+@*Page specific scripts goes here*@
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/custom/CurrencyToWordsConverter.ViewModel.js")"></script>
+}
