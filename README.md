@@ -63,5 +63,32 @@ Output: string THIRTY-FIVE DOLLARS AND FIFTY CENTS
 This method will take care of all the combinations of dollars and cents.
 
 # NumbersToWordsConverter.Web
+This project contains the Web API to host the currency to words converter. The demo page to test the service is also part of this project.
+
+## Web API
+### NumbersToWordsConverter.Web.Controllers.CurrencyToWordsConverterController.Convert
+
+/CurrencyToWordsConverter/Convert
+
+Input:
+CurrencyToWordsInputModel:
+ - double Amount
+ - string CurrencyName
+ - string CurrencyCentsName
+ 
+ Output:
+ JsonResult for ServiceResponse
+  - Result - Words for currency amount
+  - ErrorMessage - Error string will be returned if there is any error during conversion.
+
+_More web api actions can be created to expose other services_
+
+## Demo
+I have created the demo on root of the URL. 
+
+Demo is created using MVC razor view and KnockoutJS.
+
+Web UI is built using the standard ASP.Net MVC site layout that uses Bootstrap and jQuery by default.
 
 # NumbersToWordsConverter.Tests
+This project contains Unit Test for the Core project. Unit test coverage is 100% for the Core project.
